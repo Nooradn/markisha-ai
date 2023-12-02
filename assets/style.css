@@ -1,0 +1,353 @@
+/* Import Red Hat Display font */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap");
+
+/* All affected */
+* {
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Header thingy */
+header {
+  max-width: 1280px;
+  max-height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(15px);
+}
+
+.logo-header {
+  padding: 25px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.logo-header .logotext {
+  display: inline;
+  font-weight: 700;
+  font-size: 23px;
+  padding: 10px;
+}
+
+header nav ul {
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+}
+
+
+nav ul li {
+  display: inline flex;
+  list-style: none;
+  border-radius: 15px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+
+}
+
+header nav ul li:hover {
+  border: 1px solid #01b7e7;
+  background-color: #e6faff;
+}
+
+nav ul li a {
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  display: inline;
+}
+
+/* Entering main section */
+main {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* Breadcrumbs */
+main .breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-inline: auto;
+  padding-inline: 40px;
+}
+
+.bread-text {
+  display: inline;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 27px;
+  color: initial;
+}
+
+/* Split two sides */
+main .split {
+  width: 100%;
+  display: flex;
+}
+
+main a {
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.05);
+}
+
+/* Content - left side */
+main .split .content {
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  flex-basis: 75%;
+}
+
+main .split .content article {
+  padding: 40px;
+  margin-bottom: 25px;
+  display: flex;
+  border: 3px solid transparent;
+  transition: 0.5s;
+}
+
+main .split .content .article-list {
+  align-items: flex-start;
+}
+
+main .split .content .article-list:hover {
+  border: 3px solid #01b7e7;
+}
+
+main .split .content article:hover .title-prev {
+  color: #333;
+}
+
+.article-title {
+  margin-bottom: 25px;
+  color: #007999;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.article-prev {
+  color: #777;
+  font-size: 15px;
+}
+
+article img {
+  border-radius: 15px;
+  margin-left: 55px;
+}
+
+article img .thumbs {
+  height: 200px;
+  width: 200px;
+}
+
+/* Aside - right side */
+main .split aside {
+  margin: 40px;
+  height: 100%;
+  flex-basis: 25%;
+}
+
+main .split aside .about-us {
+  padding: 25px;
+}
+
+.logo-aside img {
+  display: block;
+  width: 150px;
+  margin: auto;
+  padding: 15px;
+}
+
+.logo-aside .logotype-aside {
+  padding: 15px;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.logo-aside p {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+
+aside .btn-aside {
+  padding: 10px;
+  margin: 25px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #01b7e7;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+aside .btn-aside:hover {
+  background-color: #004a5e;
+}
+
+.aside-ad {
+  margin-top: 40px;
+}
+
+.aside-ad img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer thingy */
+footer {
+  height: 250px;
+  background: #1F2234;
+  text-align: center;
+}
+
+footer .wrapper {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo-footer a {
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.logo-footer img {
+  height: 50px;
+  margin-right: 25px;
+}
+
+footer .logo-footer .logotype-footer {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+footer nav ul {
+  padding: 0px;
+}
+
+footer nav ul li a {
+  color: white;
+  font-weight: 700;
+  opacity: 75%;
+}
+
+footer nav ul li:hover a {
+  color: #01b7e7;
+}
+
+.logo-footer a {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Blog content*/
+.article-single .hero {
+  max-width: 100%;
+  margin: auto;
+}
+
+.article-text-blog {
+  padding-block: 25px;
+  color: #555;
+  line-height: 175%;
+  font-size: 19px;
+}
+
+main .split .content .card-blog:hover {
+  border: transparent;
+}
+
+.title-blog {
+  font-size: 31px;
+  margin-bottom: 25px;
+}
+
+
+/* Responsive with media query */
+@media screen and (max-width: 1280px) {
+
+  main {
+    max-width: 800px;
+
+  }
+
+  header {
+    flex-direction: column;
+    position: static;
+  }
+
+  header .logo-header {
+    /* position: sticky; */
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  main .breadcrumb {
+    margin-top: 100px;
+  }
+
+  main .split {
+    flex-direction: column;
+  }
+
+  .aside-ad img {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  main .split .content article {
+    flex-direction: column-reverse;
+  }
+
+  article img {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  main .breadcrumb {
+    margin-top: 150px;
+  }
+
+  main .split .content {
+    padding: 25px;
+  }
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 50px;
+}
